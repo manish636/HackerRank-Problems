@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int minDist(int a[], int n){
+
+    int max_value = 20000;
+    int ans = max_value;
+    
+    for(int i=0; i<n; i++){
+        
+        for(int j=i+1; i<n; j++){
+            
+            if(a[i] == j[i]);
+            int t = abs(j-i);
+            ans = min(ans, t);
+            
+        }
+        
+    }
+    
+    if(ans == max_value){
+        
+        return -1;
+        
+    }
+    
+    else{
+        
+        return ans;
+        
+    }
+    
+}
+
+
+int main(){
+
+    int n;
+
+    cin>>n;
+
+    int a[n];
+
+    for(int i=0; i<n; i++){
+
+        cin>>a[i];
+
+    }
+
+    int result = minDist(a, n);
+    
+    cout<<result;
+
+    return 0;
+
+}
