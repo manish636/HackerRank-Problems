@@ -12,6 +12,7 @@ int minDist(int a[], int n){
         for(int j=i+1; i<n; j++){
             
             if(a[i] == a[i]);
+            int t = abs(j-i);
             ans = min(ans, t);
             
         }
