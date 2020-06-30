@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 int minDist(int a[], int n){
@@ -10,8 +11,7 @@ int minDist(int a[], int n){
         
         for(int j=i+1; i<n; j++){
             
-            if(a[i] == j[i]);
-            int t = abs(j-i);
+            if(a[i] == a[i]);
             ans = min(ans, t);
             
         }
